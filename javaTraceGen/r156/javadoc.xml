@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="public" author="false" classpath="." destdir="doc" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="com.ibm.tuningfork.tracegen,com.ibm.tuningfork.tracegen.types" source="1.4" sourcepath="src" splitindex="true" use="true" version="true"/>
+    </target>
+</project>

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: TuningFork JavaTraceGenerationLibrary
+Bundle-SymbolicName: com.ibm.tuningfork.traceGeneration
+Bundle-Version: 1.2.0
+Export-Package: com.ibm.tuningfork.tracegen,
+ com.ibm.tuningfork.tracegen.types
+Bundle-Vendor: IBM Research
