@@ -378,6 +378,7 @@ public class Logger implements ILogger, IConversionLogger {
     }
 
     private AbstractFeedlet makeFeedletInternal(String name, String desc) {
+	// assert Thread.currentThread().holdsLock(this);
 	AbstractFeedlet feedlet = null;
 	switch (feedletMode) {
 	case AUTO_CLOCK_MODE:
@@ -401,7 +402,7 @@ public class Logger implements ILogger, IConversionLogger {
 	return feedlet;
     }
 
-    public void addFeedletProperty(AbstractFeedlet f, String key, String value) {
+    public synchronized void addFeedletProperty(AbstractFeedlet f, String key, String value) {
 	feedletChunk.addProperty(f.getIndex(), key, value);
     }
 
