@@ -78,4 +78,8 @@ public class FeedletChunk extends Chunk {
 	feedletOperations = 0;
 	super.close();
     }
+
+    public void reset() {
+	resetImpl();
+    }
 }

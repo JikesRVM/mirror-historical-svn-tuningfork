@@ -82,4 +82,8 @@ public class EventTypeChunk extends Chunk {
 	super.close();
     }
 
+    public void reset() {
+	resetImpl();
+    }
+
 }
